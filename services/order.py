@@ -3,7 +3,7 @@ from django.db import transaction
 
 from db.models import Order, Ticket, MovieSession
 from datetime import datetime
-import QuerySet
+from django.db.models.query import QuerySet
 
 
 def create_order(
