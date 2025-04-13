@@ -105,7 +105,7 @@ class Ticket(models.Model):
                 name="unique_movie_session"),
         ]
 
-    def __str__(self):
+    def __str__(self) -> str:
         return (f"{self.movie_session.movie.title} "
                 f"{self.movie_session.show_time} (row: {self.row}, "
                 f"seat: {self.seat})")
